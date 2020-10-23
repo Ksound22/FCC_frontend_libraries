@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Offline link-->
+    <script src="jquery-3.5.1.min.js"></script>   
+   <!--Online CDNs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Learning jQuery DOM</title>
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ancestors">
+        <div style="width: 500px;">div (great-grandparent)
+            <p class="first">PEE</p>
+            <p>Kolade again</p>
+            <ul>ul (grand-parent)
+                <li>(li direct parent)
+                    <span>span</span>
+                </li>
+                <li>Kolade</li>
+            </ul>
+        </div>
+        <div style="width: 500px;">div (great-grandparent)
+            <ul>ul (grand-parent)
+                <li>(li direct parent)
+                    <span>span</span> 
+                </li> 
+            </ul>
+        </div>
+    </div>
+
+    <script src="DOM2.js"></script>
+</body>
+</html>
